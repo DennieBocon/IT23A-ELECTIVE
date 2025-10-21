@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Basic Page</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 20px;
+    }
+    h1 {
+      color: blue;
+    }
+    h2 {
+      color: darkblue;
+    }
+    p {
+      font-size: 16px;
+      cursor: pointer;
+    }
+    a {
+      color: red;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Basic Page</h1>
+  <h2>Introduction</h2>
+  <p id="clickable">Click this paragraph to see what happens!</p>
+  <p>This is some more text to fill the page.</p>
+  <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+  <script>
+    // Get the paragraph by its ID
+    const clickableParagraph = document.getElementById('clickable');
+
+    // Add a click event to change the paragraph text and color
+    clickableParagraph.onclick = function() {
+      clickableParagraph.textContent = "You clicked me! The text has changed.";
+      clickableParagraph.style.color = "red";
+      clickableParagraph.style.fontWeight = "bold";
+    };
+  </script>
+</body>
+</html>
