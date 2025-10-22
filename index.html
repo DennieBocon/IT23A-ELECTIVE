@@ -3,47 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <title>Simple Basic Page</title>
-  <style>
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background-color: #fafafa;
-      color: #222;
-      margin: 20px;
-    }
-    h1 {
-      color: blue;
-    }
-    h2 {
-      color: darkblue;
-    }
-    p {
-      font-size: 16px;
-      cursor: pointer;
-    }
-    a {
-      color: red;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href ="style.css">
 </head>
 <body>
   <h1>Dennies Website</h1>
   <h2>Welcome to Dennies Website</h2>
   <p id="clickable">Click this paragraph to see what happens!</p>
   <p>This is some more text to fill the page.</p>
-  <a href="https://github.com/DennieBocon/IT23A-ELECTIVE.git" target="_blank">Visit Example.com</a>
+  <footer>
+     <a href="https://github.com/DennieBocon/IT23A-ELECTIVE.git" target="_blank">Visit Example.com</a>
 
-  <script>
-    const clickableParagraph = document.getElementById('clickable');
-
-    clickableParagraph.onclick = function() {
-      clickableParagraph.textContent = "You clicked me! The text has changed.";
-      clickableParagraph.style.color = "red";
-      clickableParagraph.style.fontWeight = "bold";
-    };
-  </script>
+  </footer>
+ 
+<script src="script.js">  </script>
 </body>
 </html>

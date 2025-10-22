@@ -1,0 +1,44 @@
+
+ body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #222;
+    margin: 0; /* remove default body margin */
+    height: 100vh; /* full screen height */
+    
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+
+    text-align: center;
+    background-image: url('gojo3.jpg');
+    background-size: cover;
+    background-position: center;
+      
+    }
+    h1 {
+      color: rgb(237, 237, 245);
+      text-align: center;
+      position: center;
+    }
+    h2 {
+      color: rgb(199, 199, 214);
+      text-align: center;
+      position: center;
+    }
+    p {
+      color:white;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+  footer{
+      color:white;
+      text-decoration: none;
+      text-align: center;
+    }
+    a:hover {
+      text-decoration: underline;
+      color:white;
+    }
